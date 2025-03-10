@@ -1,0 +1,66 @@
+info:
+  description: ''
+  title: ''
+  version: ''
+openapi: 3.0.0
+paths:
+  /task/api/v1/task/:
+    get:
+      operationId: task_list
+      tags:
+      - task
+    post:
+      operationId: task_create
+      tags:
+      - task
+  /task/api/v1/task/{id}/:
+    delete:
+      operationId: task_delete
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this task.
+          title: ID
+          type: integer
+      tags:
+      - task
+    get:
+      operationId: task_read
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this task.
+          title: ID
+          type: integer
+      tags:
+      - task
+    patch:
+      operationId: task_partial_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this task.
+          title: ID
+          type: integer
+      tags:
+      - task
+    put:
+      operationId: task_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this task.
+          title: ID
+          type: integer
+      tags:
+      - task
+servers:
+- url: ''
