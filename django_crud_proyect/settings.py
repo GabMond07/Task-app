@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-b@-d49b7d3^pwpp8oi-5k+0_4$mg6^9ny(-_w@&a3shun&$y2(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['clinquant-snickerdoodle-ebfeef.netlify.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -132,7 +132,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Cors authorizacion
-CORS_ALLOWED_ORIGINS = [ 'http://localhost:5173' ]
+CORS_ALLOWED_ORIGINS = [ 'http://localhost:5173' , ]
 
 REST_FRAMEWORK = {
     ...: ...,
