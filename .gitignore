@@ -7,3 +7,7 @@ venv/
 
 #Base de datos
 db.sqlite3
+
+#Archivos estaticos
+staticfiles/
+
